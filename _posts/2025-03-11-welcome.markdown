@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Welcome to Interactive Theorem Proving with Lean!"
+date:   2025-03-11 09:53:34 -0500
+categories: welcome
+---
+
+Welcome to Math 490/587!
