@@ -6,3 +6,7 @@ categories: welcome
 ---
 
 Welcome to Math 490/587!
+
+Please take some time to familiarize yourself with the syllabus for [Math 490](https://www.blakefarman.phd/syllabi/syllabi/490/S25) or [Math 587](https://www.blakefarman.phd/syllabi/syllabi/587/S25).
+
+All of the materials for this course will be made available through the class [GitHub repo](https://github.com/LATechLean/ITPLxS25).
