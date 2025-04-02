@@ -1,0 +1,8 @@
+---
+layout: post
+title: "Midterm Projects"
+date: 2025-04-01 10:00:00 -0600
+categories: projects
+---
+
+Midterm Project descriptions are now available [here](https://latechlean.github.io/projects).

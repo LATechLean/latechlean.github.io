@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Homework 1"
+date: 2025-03-19 10:00:00 -0600
+categories: homework
+---
+
+Homework 1 is now available on the class [GitHub repo](https://github.com/LATechLean/ITPLxS25/tree/main/ITPLxS25/homework).
+
+### Due Date
+Wednesday, March 26, 2025.
