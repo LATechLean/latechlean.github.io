@@ -3,6 +3,10 @@ layout: post
 title: "Midterm Projects"
 date: 2025-04-01 10:00:00 -0600
 categories: projects
+# The LATechLean/projects repo publishes to latechlean.github.io/projects/,
+# which shadows anything this site puts under /projects/. Pin this post
+# outside that path so it stays reachable.
+permalink: /announcements/2025/04/01/midterm-projects.html
 ---
 
 Midterm Project descriptions are now available [here](https://latechlean.github.io/projects).
