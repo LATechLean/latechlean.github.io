@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<div class="wrapper">
+  {% include hero.html %}
+
+  {%- assign intro = content | strip -%}
+  {%- if intro != '' -%}
+    <div class="prose home-intro">{{ content }}</div>
+  {%- endif -%}
+
+  {%- if site.posts.size > 0 -%}
+    <section class="post-section">
+      <h2 class="label">Posts</h2>
+      <ul class="post-list">
+        {%- for post in site.posts -%}
+          <li class="post-list__item">
+            <a class="post-list__link" href="{{ post.url | relative_url }}">
+              <span class="post-list__date">
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+              </span>
+              <span class="post-list__title">{{ post.title | escape }}</span>
+              {%- if post.categories.size > 0 -%}
+                <span class="post-list__cat">{{ post.categories | first }}</span>
+              {%- endif -%}
+            </a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </section>
+  {%- endif -%}
+</div>

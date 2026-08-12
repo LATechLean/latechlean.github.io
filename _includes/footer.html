@@ -1,0 +1,21 @@
+<footer class="site-footer">
+  <div class="wrapper site-footer__inner">
+    <div class="site-footer__brand">
+      {% include lockup.html class="ll-word--footer" %}
+    </div>
+
+    <div class="site-footer__col">
+      <h2 class="label label--invert">Course</h2>
+      <p>{{ site.description | escape }}</p>
+    </div>
+
+    <div class="site-footer__col">
+      <h2 class="label label--invert">Elsewhere</h2>
+      <ul class="site-footer__list">
+        {%- if site.email %}<li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>{%- endif %}
+        {%- if site.github_username %}<li><a href="https://github.com/{{ site.github_username }}">github.com/{{ site.github_username }}</a></li>{%- endif %}
+        <li><a href="{{ '/feed.xml' | relative_url }}">RSS feed</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>

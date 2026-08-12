@@ -1,0 +1,21 @@
+// Rouge syntax highlighting, tuned for the ink code ground
+
+.highlighter-rouge { margin: 0 0 1.35em; }
+
+.highlight {
+  background: none;
+
+  .c, .c1, .cm, .cs, .cd { color: #8a827e; font-style: italic; } // comments
+  .k, .kc, .kd, .kn, .kp, .kr, .kt { color: #ff8a6a; }           // keywords
+  .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx, .sr { color: #9fd39a; } // strings
+  .m, .mf, .mh, .mi, .mo, .il { color: #e8c07a; }                // numbers
+  .nf, .nd { color: #8fc4e8; }                                   // functions
+  .nc, .nn, .no, .ne, .nb, .bp { color: #c3a8e8; }               // classes, namespaces
+  .na, .nv, .vc, .vg, .vi { color: #e8dcc8; }                    // attrs, vars
+  .o, .ow, .p { color: #cbc3bd; }                                // operators, punctuation
+  .gd { color: #ff8a6a; }
+  .gi { color: #9fd39a; }
+  .ge { font-style: italic; }
+  .gs { font-weight: 700; }
+  .err { color: #ffffff; background: #ec3013; }
+}

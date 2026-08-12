@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<div class="wrapper">
+  <article class="entry" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="entry-header">
+      <p class="entry-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>
+        {%- if page.categories.size > 0 %}<span class="entry-cat">{{ page.categories | first }}</span>{% endif -%}
+      </p>
+      <h1 class="entry-title" itemprop="name headline">{{ page.title | escape }}</h1>
+    </header>
+
+    <div class="prose" itemprop="articleBody">
+      {{ content }}
+    </div>
+  </article>
+
+  <nav class="entry-nav" aria-label="More posts">
+    {%- if page.previous %}
+      <a class="entry-nav__link" href="{{ page.previous.url | relative_url }}">
+        <span class="label">Previous</span>
+        <span class="entry-nav__title">{{ page.previous.title | escape }}</span>
+      </a>
+    {%- endif %}
+    {%- if page.next %}
+      <a class="entry-nav__link entry-nav__link--next" href="{{ page.next.url | relative_url }}">
+        <span class="label">Next</span>
+        <span class="entry-nav__title">{{ page.next.title | escape }}</span>
+      </a>
+    {%- endif %}
+  </nav>
+</div>
